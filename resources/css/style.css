@@ -138,7 +138,7 @@ nav{
 
 /*-- Hero-Section-Start --*/
 .hero-section{
-    background: url("/resources/image/hero-bg.jpg");
+    background: url("img/hero-bg.jpg");
     background-size: cover;
     height: 100vh;
     background-position: center center;
@@ -257,10 +257,10 @@ form textarea{
 
 /*-- Service-Section-Start --*/
 .service-section{
-    background: url("/resources/image/service-bg.png");
+    background: url("img/service-bg.png");
     background-position: left top;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 75%;
     text-align: center;
 
 }
@@ -314,7 +314,7 @@ form textarea{
 
 /*-- Contact-Section-2-Start --*/
 .contact-section-2{
-    background: url(/resources/image/contact-2-bg.jpg);
+    background: url("img/contact-2-bg.jpg");
     background-size: cover;
     background-position: left top;
     background-repeat: no-repeat;
