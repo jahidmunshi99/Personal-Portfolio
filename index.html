@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="shortcut icon" href="resources/image/favicon.ico" type="image/x-icon">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Google-Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Vendor -->
+    <link rel="stylesheet" href="vendor/css/compile(grid).css">
+    <!-- Resources -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+<body>
+    <!-- Header-Section-Start -->
+    <header class="header-section">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="data:image/png;base64,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" alt="">
+                </div><!--logo-->
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Page</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <button class="btn top-button">Get Free Consultant</button>
+                    </ul>
+                </div><!--nav-menu-->
+            </nav><!--nav-->
+        </div><!--container-->           
+    </header>
+    <!-- Header-Section-End -->
+    <!-- Main-Start -->
+    <main>
+        <!-- Hero-Section-Start -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="text-area">
+                    <span class="top-text">Get Every Single Solutions.</span>
+                    <h1>I'm Designer<br>Haris F. Watson</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur adipisci molestiae, odit voluptatibus cupiditate non ad autem. Eum facilis iure omnis unde corrupti ex! Error illo totam ipsa, placeat dolorum unde rem.</p>
+                    <div class="button-area">
+                        <button class="btn top-button"><a href="#">Learn More</a></button>                                             
+                        <button class="btn hire-btn">Hire me</button>
+                    </div><!--button-area--> 
+                </div><!--text-area-->                
+            </div><!--container-->
+        </section><!--hero-section-->
+        <!-- Hero-Section-End -->
+        <!-- About-Section-Start -->
+        <section class="about-section">
+            <div class="container">
+                <div class="col span_1_of_2 box-left">
+                    <h3>Designing With Passion While Exploring The World.</h3>
+                    <p>Consectetur adipiscing elit, sed do eiusmod tempor ididunt ut labore et dolore magna aliqua. Quis ipsum suspendisces gravida. Risus commodo viverra sebfd dho eiusmod tempor maecenas accumsan lacus. <br> <br>
+                    Consectetur adipiscing elit, sed do eiusmod tempor ididunt ut labore et dolore magna aliqua.</p>
+                </div><!--col span box-->
+                <div class="col span_1_of_2 box-right">
+                    <div class="container">
+                        <h2>Any Type Of Query<br>& Discussion.</h2>
+                        <p>Late talk with me</p>
+                    </div><!--container-->                    
+                    <form action="#">
+                        <div class="container">
+                            <div class="col span_1_of_2">
+                                <input type="text" name="Name" placeholder="Enter Your Name*" required>
+                            </div><!--col span-->
+                            <div class="col span_1_of_2">
+                                <input type="email" name="Email" placeholder="Enter Your Email*" required>
+                            </div><!-- col span-->
+                        </div><!--container-->
+                        <div class="container">
+                            <textarea name="Message" id="#" cols="30" rows="10" placeholder="Enter Your Message*"></textarea>
+                        </div><!--container-->
+                        <div class="container">
+                            <input type="submit" value="Send" class="submit-btn">
+                        </div><!--container-->
+                    </form><!--form-->
+                </div><!--col span box-->
+            </div><!--container-->            
+        </section><!--about-section-->
+        <!-- About-Section-End -->
+
+
+        <!-- Service-Section-Start -->
+        <section class="service-section">
+            <div class="container">
+                <h2>What Services you will<br>Get from me!</h2>
+            </div><!--container-->
+            <div class="container">
+                <div class="col span_1_of_3 box">
+                    <div class="service-logo">
+                        <i class="fas fa-pen-fancy"></i>
+                        <h4>UI/UX Design</h4>
+                        <p>Free resource that will help nderstand thecv designc process and improve theroi nderstand the design process andisei impro are of vquality.</p>
+                    </div><!--service-logo-->
+                </div><!--col span box-->
+                <div class="col span_1_of_3 box">
+                    <div class="service-logo">
+                        <i class="fa far fa-bullhorn"></i>
+                        <h4>UI/UX Design</h4>
+                        <p>Free resource that will help nderstand thecv designc process and improve theroi nderstand the design process andisei impro are of vquality.</p>
+                    </div><!--service-logo-->
+                </div><!--col span box-->
+                <div class="col span_1_of_3 box">
+                    <div class="service-logo">
+                        <i class="fa fal fa-photo-video"></i>
+                        <h4>UI/UX Design</h4>
+                        <p>Free resource that will help nderstand thecv designc process and improve theroi nderstand the design process andisei impro are of vquality.</p>
+                    </div><!--service-logo-->
+                </div><!--col span box-->
+            </div><!--container-->
+        </section><!--service-section-->
+        <!-- Service-Section-End -->
+
+        <!-- Portfolio-Section-Start -->
+        <section class="portfolio-section">
+            <div class="container">                
+            </div><!--container-->
+        </section><!--portfolio-section-->
+        <!-- Portfolio-Section-End -->
+
+        <!-- Contact-Section-2-Start -->
+        <section class="contact-section-2">
+            <div class="container">
+                <div class="contact-2-text-aera">
+                    <div class="left-col">
+                        <h2>Dont worry for contact<br>i`m available</h2>
+                    </div><!--left-col-->                
+                    <div class="right-col">
+                        <button class="btn top-button">Contact Me Now</button>
+                    </div><!--right-col-->
+                </div><!--contact-2-text-aera-->  
+            </div><!--container-->
+        </section><!--contact-section-2-->
+        <!-- Contact-Section-2-End -->
+
+
+        <!-- Testimonial-Section-Start-->
+        <section class="testimonial-section">
+            <div class="container">
+                <h2>Some Possitive Feedback<br>That Encourage Us</h2>
+            </div><!--container-->
+            <div class="container">
+                <div class="col span_1_of_3 box">
+                    <div class="client-info">
+                        <div class="container">
+                            <div class="col span_1_of_2">
+                                <div class="clients-Photo">  
+                                    <img src="resources/image/client-1.png" alt="">                                   
+                                </div><!--Client-Photo-->
+                            </div>                            
+                            <div class="col span_1_of_2">
+                                <div class="clients-review">
+                                    <h5>Abrar Faiaz</h5>
+                                <span class="roll">UI/UX Design</span>
+                                </div><!--clients-review-->
+                            </div>
+                        </div><!--container-->
+                        <div class="conainer">
+                            <p>Free resource that will help nderstand thecv designc process and improve theroi nderstand the design process andisei impro are of vquality.</p>
+                        </div><!--conainer--> 
+                    </div><!--client-info-->    
+                </div><!--col span box-->
+                <div class="col span_1_of_3 box">
+                    <div class="client-info">
+                        <div class="container">
+                            <div class="col span_1_of_2">
+                                <div class="clients-Photo">  
+                                    <img src="resources/image/client-2.png" alt="">                                   
+                                </div><!--Client-Photo-->
+                            </div>                            
+                            <div class="col span_1_of_2">
+                                <div class="clients-review">
+                                    <h5>Jahid Munshi</h5>
+                                <span class="roll">UI/UX Design</span>
+                                </div><!--clients-review-->
+                            </div>
+                        </div><!--container-->
+                        <div class="conainer">
+                            <p>Free resource that will help nderstand thecv designc process and improve theroi nderstand the design process andisei impro are of vquality.</p>
+                        </div><!--conainer--> 
+                    </div><!--client-info-->    
+                </div><!--col span box-->
+                <div class="col span_1_of_3 box">
+                    <div class="client-info">
+                        <div class="container">
+                            <div class="col span_1_of_2">
+                                <div class="clients-Photo">  
+                                    <img src="resources/image/client-3.png" alt="">                                   
+                                </div><!--Client-Photo-->
+                            </div>                            
+                            <div class="col span_1_of_2">
+                                <div class="clients-review">
+                                    <h5>Ayesha Afreen</h5>
+                                <span class="roll">UI/UX Design</span>
+                                </div><!--clients-review-->
+                            </div>
+                        </div><!--container-->
+                        <div class="conainer">
+                            <p>Free resource that will help nderstand thecv designc process and improve theroi nderstand the design process andisei impro are of vquality.</p>
+                        </div><!--conainer--> 
+                    </div><!--client-info-->    
+                </div><!--col span box-->                           
+            </div><!--container-->
+        </section><!--testimonial-section-->
+        <!-- Testimonial-Section-End-->
+
+        <!-- Slider-Section-2-Start -->
+        <section class="slider-section-2">
+            <div class="container">
+                <div class="col span_1_of_4">
+                    <div class="slider-image">
+                        <img src="resources/image/slider-1.png" alt="">
+                    </div><!--slider-image-->
+                    
+                </div><!--col span 1 of 4-->
+                <div class="col span_1_of_4">
+                    <div class="slider-image">
+                        <img src="resources/image/slider-2.png" alt="">
+                    </div><!--slider-image-->
+                </div><!--col span 1 of 4-->
+                <div class="col span_1_of_4">
+                    <div class="slider-image">
+                        <img src="resources/image/slider-3.png" alt="">
+                    </div><!--slider-image-->
+                </div><!--col span 1 of 4-->
+                <div class="col span_1_of_4">
+                    <div class="slider-image">
+                        <img src="resources/image/slider-4.png" alt="">
+                    </div><!--slider-image-->
+                </div><!--col span 1 of 4-->
+            </div><!--container-->
+        </section><!--slider-section-2-->
+        <!-- Slider-Section-2-End -->
+
+        <!-- Contact-Section-2-Start -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="col span_1_of_2 box-left">
+                    <h2>Any Type Of Query<br>& Discussion.</h2>
+                        <p>Consectetur adipiscing elit, sed do eiusmod tempor ididunt ut labore et dolore magna aliqua. Quis ipsum suspendisces gravida. Risus commodo viverra.</p>
+                </div><!--col span box-->
+                <div class="col span_1_of_2 box-right">                
+                    <form action="#">
+                        <div class="container">
+                            <div class="col span_1_of_2">
+                                <input type="text" name="Name" placeholder="Enter Your Name*" required>
+                            </div><!--col span-->
+                            <div class="col span_1_of_2">
+                                <input type="email" name="Email" placeholder="Enter Your Email*" required>
+                            </div><!-- col span-->
+                        </div><!--container-->
+                        <div class="container">
+                            <textarea name="Message" id="#" cols="30" rows="10" placeholder="Enter Your Message*"></textarea>
+                        </div><!--container-->
+                        <div class="container">
+                            <input type="submit" value="Send" class="submit-btn">
+                        </div><!--container-->
+                    </form><!--form-->
+                </div><!--col span box-right-->
+            </div><!--container-->
+        </section><!--contact-section-2-->
+        <!-- Contact-Section-End -->
+
+        <!-- Footer-Section-Start -->
+        <footer class="footer-section">
+            <section class="footer-section">
+                <div class="top-footer">
+                    <div class="container">
+                        <div class="logo">
+                            <img src="resources/image/logo.png" alt="">
+                        </div><!--logo-->
+                        <div class="email-info">
+                            <h2><a href="#">hireme@portfolio.com</a></h2>
+                        </div><!--email-info-->
+                        <div class="address">
+                            <p>221B Baker Street, Post office Box 353<br>
+                                Park Road, USA - 215431</p>
+                        </div><!--address-->
+                    </div><!--container-->                
+                </div><!--top-footer-->
+                <div class="bottom-footer">
+                    <div class="container">
+                        <div class="footer-text">
+                            <div class="copyright-info">
+                                <p>Copyright ©2022 All rights reserved | This template is made with  by <a href="#">Jahid Munshi</a></p>
+                                </div><!--copyright-info-->
+                            <div class="social-links">
+                                <ul>
+                                    <li><a href="#">Stay Connected </a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                                </ul>
+                            </div>
+                        </div> <!--footer-text-->                    
+                    </div><!--container-->
+                </div><!--bottom-footer-->    
+            </section><!--footer-section-->            
+        </footer>
+        <!-- Footer-Section-End -->
+
+
+
+
+
+
+    </main>   
+    <!-- Main-End -->
+    
+
+    
+</body>
+</html>
